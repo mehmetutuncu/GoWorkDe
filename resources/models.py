@@ -14,12 +14,13 @@ db = PostgresqlDatabase(database=database, user=user, password=password, host=ho
 
 
 class GoWorkDe(Model):
-    address = TextField()
     phone = TextField()
     website = TextField()
     email = TextField(unique=True, null=False)
     company_name = TextField()
     company_url = TextField()
+    rating_count = CharField()
+    rating_value = CharField()
 
     class Meta:
         database = db
