@@ -4,3 +4,4 @@ bs4
 peewee
 psycopg2
 openpyxl
+environs
